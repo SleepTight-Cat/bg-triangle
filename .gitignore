@@ -21,20 +21,14 @@
 /submodules/diff-Brasterization/diff_brasterization/__pycache__
 *.so
 /submodules/diff-Brasterization/diff_brasterization.egg-info
-*.png
+
 
 /output/
-/output_obj/
-/output_ply/
-/output_nerf/
 /outputs/
 *.ply
 *.obj
 /wandb
 *.lnk
-/record
-/record_chair
-/record_ficus
-*.jpg
 *.mp4
-*.zip
+/submodules/brasterizer/third_party/glm/doc
+/submodules/diff-Brasterization/third_party/glm/doc
