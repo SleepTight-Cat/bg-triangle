@@ -1,0 +1,20 @@
+name: bgtriangle
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.18
+  - cudatoolkit=11.8.0
+  - numpy=1.26.4
+  - plyfile=1.1
+  - tqdm=4.66.6
+  - wandb
+  - pip:
+    - opencv-python==4.10.0.84
+    - pandas==2.2.3
+    - torch==2.5.1
+    - torchaudio==2.5.1
+    - torchvision==0.20.1
+    - trimesh==4.5.2
+    - viser==0.2.12
+    - git+https://github.com/facebookresearch/pytorch3d.git
