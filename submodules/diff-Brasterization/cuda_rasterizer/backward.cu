@@ -679,7 +679,7 @@ renderCUDA(
 			atomicAdd(&(dL_dopacity[global_id]), gs_weight * G * dL_dalpha);
 
 			// Update gradients w.r.t. boundary effect
-			if (gs_weight != 1.0f and gs_weight != 0.5f and gs_weight != 0.0f) {
+			if (gs_weight != 1.0f && gs_weight != 0.5f && gs_weight != 0.0f) {
 				const float dL_dweight = con_o.w * G * dL_dalpha;
 
 				float2 bxy = points_xy_image_boundary[rbf_bid];
