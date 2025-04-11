@@ -1,4 +1,4 @@
-# BG-Triangle: Bézier Gaussian Triangle for 3D Vectorization and Rendering [[Paper]]() [[Project Page]]() 
+# BG-Triangle: Bézier Gaussian Triangle for 3D Vectorization and Rendering [[Paper]](https://www.arxiv.org/pdf/2503.13961) [[Project Page]](https://wuminye.github.io/projects/BGTriangle/) 
 Minye Wu*, Haizhao Dai*, Kaixin Yao,  Tinne Tuytelaars#, and Jingyi Yu#.</br>
 
 
@@ -80,7 +80,7 @@ python demo.py  -s <path to COLMAP or NeRF Synthetic dataset>  --init_path <path
 </details>
 <br>
 
-For [Masked T&T dataset](https://dl.fbaipublicfiles.com/nsvf/dataset/TanksAndTemple.zip), please use the provided training script (train_maskTT.sh).
+For [Masked T&T dataset](https://drive.google.com/file/d/1rnJPlxkK_rj5pNtv5BTtfkyMXHv-IbZT/view?usp=sharing), please use the provided training script (train_maskTT.sh).
 
 
 ### 3.Testing and Evaluation
