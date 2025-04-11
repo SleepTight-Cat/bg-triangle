@@ -588,6 +588,8 @@ class BPrimitiveBezier(BPrimitiveBase):
 
     @torch.no_grad()
     def densify_and_prune(self, edge_threshold = 5, grad_threshold = 5e-4, vis_threshold = 0.02, area_threshold = 0.00003):
+        if(self.num_primitives > 2000): ###
+            return
         self.split_bprimitive(edge_threshold = edge_threshold,  grad_threshold = grad_threshold, area_threshold = area_threshold)
         self.prune(0.3, vis_threshold =vis_threshold, area_threshold = area_threshold)
 
