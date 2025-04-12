@@ -284,10 +284,10 @@ class BPrimitiveBezier(BPrimitiveBase):
     def create_from_pc(self, points, init_triangle_size: float, spatial_lr_scale: float, resolution: int, resolution_res: int = 1) -> None:
         self.spatial_lr_scale = spatial_lr_scale
 
-     
-
-
+    
         points = points.unsqueeze(1).repeat(1,3,1)
+        idx = torch.randperm(points.shape[0])[:1000] # Assume initial_pc larger than 1000
+        points = points[idx]
 
         triangles  = generate_random_unit_triangles(points.size(0))*init_triangle_size
 
